@@ -20,7 +20,7 @@ def create_app():
 
     # set flask configuration and logging
     app.config.from_mapping(app.container.config.get("app"))
-    setup_logging(app)
+#    setup_logging(app)
 
     return app
 
