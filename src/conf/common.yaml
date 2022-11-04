@@ -1,0 +1,13 @@
+---
+app:
+  my_service:
+    greet: "Hello, World!"
+  db_repository:
+    connection:
+      dialect: ${DB_DIALECT:mysql}
+      driver: ${DB_DRIVER:pymysql}
+      username: ${DB_USERNAME}
+      password: ${DB_PASSWORD}
+      host: ${DB_HOST}
+      port: ${DB_PORT:3306}
+      schema: ${DB_SCHEMA:test}

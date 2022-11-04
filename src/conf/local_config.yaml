@@ -1,1 +1,6 @@
-
+---
+app:
+  LOG_FILE: application.log
+  keycloak:
+    base_url: ${KEYCLOAK_BASE:https://keycloak.livongo.integration.teladoc.io/auth}
+    realm: ${KEYCLOAK_REALM:Teladoc-Service-Accounts}
