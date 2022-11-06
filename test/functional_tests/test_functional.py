@@ -28,7 +28,7 @@ def mock_settings_env_vars():
         yield
 
 
-@pytest.fixture(scope='session', autouse=True)
+@pytest.fixture(scope='module', autouse=True)
 def app():
     # test if pytest fixture for env vars works as expected
     assert os.environ["ENV"] == "TEST", f"ENV is set to {os.environ['ENV']}"
